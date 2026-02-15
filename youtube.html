@@ -14,23 +14,20 @@
             margin-bottom: 0;
             font-family: Roboto, Arial, Helvetica, sans-serif;
         }
-        .video-preview{
-            width: 300px;
-            display: inline-block;
-            vertical-align: top;
-            margin-right: 12px;
-            margin-bottom: 40px;
-        }
-        .video-author:hover, .video-title:hover, .thumbnail{
+        .video-author:hover, .video-title:hover, .thumbnail,.channel-profile:hover{
             cursor: pointer;
         }
         .thumbnail{
-            width: 300px;
-            height: 175px;
+            width: 100%;
+            aspect-ratio: 16 / 9;
             object-fit: cover;
         }
         .thumbnail-row{
             margin-bottom: 10px;
+        }
+        .video-details{
+            display: grid;
+            grid-template-columns: 50px 1fr;
         }
         .video-author, .video-stats{
             color: rgb(96, 96, 96);
@@ -43,12 +40,6 @@
             display: inline-block;
             vertical-align: top;
         }
-        .channel-profile{
-            width: 50px;
-        }
-        .video-info{
-            width: 240px;
-        }
         .profile{
             width: 38px;
             border-radius: 40px;
@@ -58,6 +49,13 @@
             margin-bottom: 10px;
             font-weight: 500;
         }
+        .content-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 15px;
+            row-gap: 40px;
+        }
+        
 
 
 
@@ -65,197 +63,200 @@
 </head>
 <body>
 
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/friends.jpg">
-        </div>
-        <div class="video-details"> 
-            <div class="channel-profile">
-                <img class="profile" src="Profiles/friends.jpg">
+
+    <div class="content-container">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/friends.jpg">
             </div>
-            <div class="video-info">
-                <p class="video-title">The Ones That Make You Laugh: Part 2 | Friends</p>
-                <p class="video-author">Friends</p>
-                <p class="video-stats">1.3M views &#183; 6 months ago</p>
+            <div class="video-details"> 
+                <div class="channel-profile">
+                    <img class="profile" src="Profiles/friends.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">The Ones That Make You Laugh: Part 2 | Friends</p>
+                    <p class="video-author">Friends</p>
+                    <p class="video-stats">1.3M views &#183; 6 months ago</p>
+                </div>
             </div>
+            
         </div>
-        
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/ali-abdaal.jpg">
-        </div>
-        <div class="video-details"> 
-            <div class="channel-profile">
-                <img class="profile" src="Profiles/ali-abdaal.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/ali-abdaal.jpg">
             </div>
-            <div class="video-info">
-                <p class="video-title">Make 2026 the Best Year of Your Life (Evidence-Based)</p>
-                <p class="video-author">Ali Abdaal</p>
-                <p class="video-stats">3.4M views &#183; 1 month ago</p>
+            <div class="video-details"> 
+                <div class="channel-profile">
+                    <img class="profile" src="Profiles/ali-abdaal.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Make 2026 the Best Year of Your Life (Evidence-Based)</p>
+                    <p class="video-author">Ali Abdaal</p>
+                    <p class="video-stats">3.4M views &#183; 1 month ago</p>
+                </div>
             </div>
+            
         </div>
-        
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/mr-bean.png">
-        </div>
-        <div class="video-details"> 
-            <div class="channel-profile">
-                <img class="profile" src="Profiles/mr-bean.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/mr-bean.png">
             </div>
-            <div class="video-info">
-                <p class="video-title">Teddy Reads a Book | Mr. Bean Official Cartoon</p>
-                <p class="video-author">Mr. Bean</p>
-                <p class="video-stats">924k views &#183; 2 years ago</p>
+            <div class="video-details"> 
+                <div class="channel-profile">
+                    <img class="profile" src="Profiles/mr-bean.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Teddy Reads a Book | Mr. Bean Official Cartoon</p>
+                    <p class="video-author">Mr. Bean</p>
+                    <p class="video-stats">924k views &#183; 2 years ago</p>
+                </div>
             </div>
+            
         </div>
-        
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/zayn.webp">
-        </div>
-        <div class="video-details"> 
-            <div class="channel-profile">
-                <img class="profile" src="Profiles/zayn.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/zayn.webp">
             </div>
-            <div class="video-info">
-                <p class="video-title">ZAYN - Alienated (Live Performance Video)</p>
-                <p class="video-author">zayn</p>
-                <p class="video-stats">5.2m views &#183; 1 year ago</p>
+            <div class="video-details"> 
+                <div class="channel-profile">
+                    <img class="profile" src="Profiles/zayn.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">ZAYN - Alienated (Live Performance Video)</p>
+                    <p class="video-author">zayn</p>
+                    <p class="video-stats">5.2m views &#183; 1 year ago</p>
+                </div>
             </div>
+            
         </div>
-        
-    </div>
-     <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/html-css.jpg">
-        </div>
-        <div class="video-details"> 
-            <div class="channel-profile">
-                <img class="profile" src="Profiles/html-css.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/html-css.jpg">
             </div>
-            <div class="video-info">
-                <p class="video-title">HTML & CSS Full Course - Beginner to Pro</p>
-                <p class="video-author">SuperSimpleDev</p>
-                <p class="video-stats">18m views &#183; 4 years ago</p>
+            <div class="video-details"> 
+                <div class="channel-profile">
+                    <img class="profile" src="Profiles/html-css.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">HTML & CSS Full Course - Beginner to Pro</p>
+                    <p class="video-author">SuperSimpleDev</p>
+                    <p class="video-stats">18m views &#183; 4 years ago</p>
+                </div>
             </div>
+            
         </div>
-        
-    </div>
-     <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/spiderman.jpeg">
-        </div>
-        <div class="video-details"> 
-            <div class="channel-profile">
-                <img class="profile" src="Profiles/spider-man.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/spiderman.jpeg">
             </div>
-            <div class="video-info">
-                <p class="video-title">THE AMAZING SPIDER-MAN 3D - Official Trailer</p>
-                <p class="video-author">Sony Pictures Entertainment</p>
-                <p class="video-stats">17m views &#183; 14 years ago</p>
+            <div class="video-details"> 
+                <div class="channel-profile">
+                    <img class="profile" src="Profiles/spider-man.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">THE AMAZING SPIDER-MAN 3D - Official Trailer</p>
+                    <p class="video-author">Sony Pictures Entertainment</p>
+                    <p class="video-stats">17m views &#183; 14 years ago</p>
+                </div>
             </div>
+            
         </div>
-        
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/selena-gomez.jpg">
-        </div>
-        <div class="video-details"> 
-            <div class="channel-profile">
-                <img class="profile" src="Profiles/selena-gomez.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/selena-gomez.jpg">
             </div>
-            <div class="video-info">
-                <p class="video-title">Selena Gomez - Boyfriend (Official Video)</p>
-                <p class="video-author">Selena Gomez</p>
-                <p class="video-stats">80m views &#183; 5 years ago</p>
+            <div class="video-details"> 
+                <div class="channel-profile">
+                    <img class="profile" src="Profiles/selena-gomez.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Selena Gomez - Boyfriend (Official Video)</p>
+                    <p class="video-author">Selena Gomez</p>
+                    <p class="video-stats">80m views &#183; 5 years ago</p>
+                </div>
             </div>
+            
         </div>
-        
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/got.jpg">
-        </div>
-        <div class="video-details"> 
-            <div class="channel-profile">
-                <img class="profile" src="Profiles/got.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/got.jpg">
             </div>
-            <div class="video-info">
-                <p class="video-title">Game of Thrones | Season 8 | Official Trailer (HBO)</p>
-                <p class="video-author">GameOfThrones</p>
-                <p class="video-stats">72m views &#183; 6 years ago</p>
+            <div class="video-details"> 
+                <div class="channel-profile">
+                    <img class="profile" src="Profiles/got.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Game of Thrones | Season 8 | Official Trailer (HBO)</p>
+                    <p class="video-author">GameOfThrones</p>
+                    <p class="video-stats">72m views &#183; 6 years ago</p>
+                </div>
             </div>
+            
         </div>
-        
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/1D.jpg">
-        </div>
-        <div class="video-details"> 
-            <div class="channel-profile">
-                <img class="profile" src="Profiles/1D.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/1D.jpg">
             </div>
-            <div class="video-info">
-                <p class="video-title">One Direction - Perfect (Official Video)</p>
-                <p class="video-author">One Direction</p>
-                <p class="video-stats">601m views &#183; 10 years ago</p>
+            <div class="video-details"> 
+                <div class="channel-profile">
+                    <img class="profile" src="Profiles/1D.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">One Direction - Perfect (Official Video)</p>
+                    <p class="video-author">One Direction</p>
+                    <p class="video-stats">601m views &#183; 10 years ago</p>
+                </div>
             </div>
+            
         </div>
-        
-    </div>
-     <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/you.avif">
-        </div>
-        <div class="video-details"> 
-            <div class="channel-profile">
-                <img class="profile" src="Profiles/you.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/you.avif">
             </div>
-            <div class="video-info">
-                <p class="video-title">YOU | Series Trailer | Netflix</p>
-                <p class="video-author">Netflix</p>
-                <p class="video-stats">1.1m views &#183; 10 months ago</p>
+            <div class="video-details"> 
+                <div class="channel-profile">
+                    <img class="profile" src="Profiles/you.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">YOU | Series Trailer | Netflix</p>
+                    <p class="video-author">Netflix</p>
+                    <p class="video-stats">1.1m views &#183; 10 months ago</p>
+                </div>
             </div>
+            
         </div>
-        
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/mosh.jpg">
-        </div>
-        <div class="video-details"> 
-            <div class="channel-profile">
-                <img class="profile" src="Profiles/mosh.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/mosh.jpg">
             </div>
-            <div class="video-info">
-                <p class="video-title">Python Projects for Beginners – Master Problem-Solving! 🚀</p>
-                <p class="video-author">Programming with Mosh</p>
-                <p class="video-stats">764k views &#183; 1 year ago</p>
+            <div class="video-details"> 
+                <div class="channel-profile">
+                    <img class="profile" src="Profiles/mosh.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Python Projects for Beginners – Master Problem-Solving! 🚀</p>
+                    <p class="video-author">Programming with Mosh</p>
+                    <p class="video-stats">764k views &#183; 1 year ago</p>
+                </div>
             </div>
+            
         </div>
-        
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/harry-styles.jpg">
-        </div>
-        <div class="video-details"> 
-            <div class="channel-profile">
-                <img class="profile" src="Profiles/harry-styles.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/harry-styles.jpg">
             </div>
-            <div class="video-info">
-                <p class="video-title">Harry Styles - As It Was (Live at The BRIT Awards 2023)</p>
-                <p class="video-author">Harry Styles</p>
-                <p class="video-stats">7.2m &#183; 2 years ago</p>
+            <div class="video-details" > 
+                <div class="channel-profile">
+                    <img class="profile" src="Profiles/harry-styles.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Harry Styles - As It Was (Live at The BRIT Awards 2023)</p>
+                    <p class="video-author">Harry Styles</p>
+                    <p class="video-stats">7.2m &#183; 2 years ago</p>
+                </div>
             </div>
+            
         </div>
-        
     </div>
    
 </body>
