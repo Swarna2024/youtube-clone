@@ -11,38 +11,30 @@
     <link rel="stylesheet" href="styles/header.css">
     <title>Youtube</title>
     <style>
-        .header{
-            height: 55px;
-            display: flex;
-            flex-direction: row;
-        }
-        .logo-section{
-            width: 150px;
-            background-color: lightblue;
-            margin-right: 300px;
-        }
-        .search-bar-section{
-            flex:1;
-            background-color: lightcoral;
-            margin-right: 400px;
-        }
-        .options-section{
-            width: 250px;
-            background-color: lightgreen;
-        }
+        
     </style>
 </head>
 <body>
 
     <div class="header">
         <div class="logo-section">
-            logo
+            <img class="menu-icon icon" src="icons/hamburger-menu.svg">
+            <img class="logo icon" src="icons/youtube-logo.svg">
         </div>
         <div class="search-bar-section">
-            <input class="search-bar" placeholder="Search" type="text">
+            <input class="search-bar" name="search-bar" placeholder="Search" type="text">
+            <button class="search-button">
+                <img class="search-icon icon" src="icons/search.svg">
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search-icon icon" src="icons/voice-search-icon.svg">
+            </button>
         </div>
         <div class="options-section">
-            option
+            <img class="upload-icon icon" src="icons/upload.svg">
+            <img class="apps-icon icon" src="icons/youtube-apps.svg">
+            <img class="notifications-icon icon" src="icons/notifications.svg">
+            <img class="profile-picture icon" src="icons/my_channel.jpeg">
         </div>
 
 
