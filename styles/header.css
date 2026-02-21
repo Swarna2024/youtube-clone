@@ -46,7 +46,6 @@ button{
     width: 60px;
     height: 39px;
     border-left: 0;
-    margin-right: 10px;
     border-radius: 0 2px 2px 0;
     background-color: #f8f8f8;
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
@@ -77,6 +76,8 @@ button{
 }
 
 .voice-search-button {
+        margin-left: 10px;
+
     height: 40px;
     width: 40px;
     border-radius: 30px;
@@ -128,13 +129,6 @@ button{
     font-family: Roboto, Arial, Helvetica, sans-serif;
     white-space: nowrap;
 }
-.search-bar-section .tool-tip {
-    left: -10px;
-}
-.voice-search-icon-container .tool-tip {
-    left: -60px;
-}
-
 .search-icon-container:hover .tool-tip {
     opacity: 1;
     visibility: visible;
@@ -146,20 +140,15 @@ button{
     opacity: 1;
     visibility: visible;
 }
-
 .options-item{
     position: relative;
 }
-
 .options-item:hover .tool-tip {
     opacity: 1;
     visibility: visible;
 }
-
-.options-item:has(.apps-icon) .tool-tip {
-    left: -20px;
-}
-
-.options-item:has(.notification-count) .tool-tip {
-    left: -15px;
-}
+.search-icon-container, .voice-search-icon-container, .options-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
