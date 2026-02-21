@@ -5,4 +5,24 @@ p{
 }
 body{
     margin:0;
+    padding-top: 60px;
+    padding-left: 80px;
 }
+.header{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 55px;
+    z-index: 100;
+    
+}
+.content-container{
+    border-top: 1px solid #ccc;
+    padding: 25px;
+    background-color: #f4f4f4;
+    z-index: -100;
+}
+
+
