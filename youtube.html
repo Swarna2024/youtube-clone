@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/side-bar.css">
     <title>Youtube</title>
     <style>
-        
+
         
     
         
@@ -27,22 +27,37 @@
         </div>
         <div class="search-bar-section">
             <input class="search-bar" name="search-bar" placeholder="Search" type="text">
-            <button class="search-button">
-                <img class="search-icon icon" src="icons/search.svg">
-            </button>
-            <button class="voice-search-button">
-                <img class="voice-search-icon icon" src="icons/voice-search-icon.svg">
-            </button>
+            <div class="search-icon-container">
+                <button class="search-button">
+                    <img class="search-icon icon" src="icons/search.svg">
+                </button>
+                <div class="tool-tip"> Search </div>
+            </div>
+            <div class="voice-search-icon-container">
+                <button class="voice-search-button">
+                    <img class="voice-search-icon icon" src="icons/voice-search-icon.svg">
+                </button>
+                <div class="tool-tip"> Search with your voice </div>
+            </div>
         </div>
         <div class="options-section">
-            <img class="upload-icon icon" src="icons/upload.svg">
-            <img class="apps-icon icon" src="icons/youtube-apps.svg">
-            <div style="position: relative;">
+            <div class="options-item">
+                <img class="upload-icon icon" src="icons/upload.svg">
+                <div class="tool-tip"> Create </div>
+            </div>
+            <div class="options-item">
+                <img class="apps-icon icon" src="icons/youtube-apps.svg">
+                <div class="tool-tip"> YouTube apps </div>
+            </div>
+            <div class="options-item" style="position: relative;">
                  <img class="notifications-icon icon" src="icons/notifications.svg">
                  <p class="notification-count">3</p>
+                 <div class="tool-tip"> Notifications </div>
             </div>
-           
-            <img class="profile-picture icon" src="icons/my_channel.jpeg">
+            <div class="options-item">
+                <img class="profile-picture icon" src="icons/my_channel.jpeg">
+            </div>
+
         </div>
 
 

@@ -31,8 +31,8 @@
 
 .logo-section .menu-icon {
     height: 23px;
-    margin-left: 24px;
-    margin-right: 25px;
+    margin-left: 30px;
+    margin-right: 27px;
 }
 .search-icon{
     height: 22px;
@@ -112,4 +112,54 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.search-icon-container {
+    position: relative;
+}
+.tool-tip {
+    position: absolute;
+    top: 50px;
+    background-color: #747474be;
+    color: #fff;
+    padding: 5px 8px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+.search-bar-section .tool-tip {
+    left: -10px;
+}
+.voice-search-icon-container .tool-tip {
+    left: -60px;
+}
+
+.search-icon-container:hover .tool-tip {
+    opacity: 1;
+    visibility: visible;
+}
+.voice-search-icon-container{
+    position: relative;
+}
+.voice-search-icon-container:hover .tool-tip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.options-item{
+    position: relative;
+}
+
+.options-item:hover .tool-tip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.options-item:has(.apps-icon) .tool-tip {
+    left: -20px;
+}
+
+.options-item:has(.notification-count) .tool-tip {
+    left: -15px;
 }
